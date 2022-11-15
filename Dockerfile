@@ -1,4 +1,4 @@
-FROM ubuntu/postgres:12-20.04_beta
+FROM ubuntu/postgres:14-22.04_beta
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN printf 'APT::Install-Recommends "0";\nAPT::Install-Suggests "0";' > /etc/apt/apt.conf.d/01norecommend \
